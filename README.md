@@ -47,3 +47,7 @@ A review and introduction to the CLRS Benchmark developed by the team at Deepmin
    Developting networks that can combine the strengths of algorithms and traditional neural networks while mitigating their weaknesses would be a powerful development.
    
  ### Recent Attempts at Training Neural Networks Algorithms
+ 
+ Over the past five to ten years attempts have been made to construct neural networks that can learn from data how to perform algorithmic tasks.  [In this paper from Google Brain](https://arxiv.org/abs/1511.08228), convolutional gated recurrent units (CGRUs) are used to perform successive steps of basic tasks such as binary addition, sequence reversal, and sequence sorting.
+ 
+<img width="564" alt="GPU" src="https://user-images.githubusercontent.com/52665911/234432590-d67c06e2-efd8-4ff6-9c19-9ddee097b02e.png">
