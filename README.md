@@ -4,7 +4,9 @@ A review and introduction to the CLRS Benchmark developed by the team at Deepmin
 ## Topics Covered
 
 * Introduction to the CLRS Benchmark Paper and Background Context
+  * What is the CLRS Benchmark?
   * Neural Networks vs Algorithms
+  * Recent Attempts at Teaching Neural Networks Algorithms
 * Overview of the Benchmark
   * Motivation
   * Which Algorithms to Benchmark Against
@@ -41,3 +43,7 @@ A review and introduction to the CLRS Benchmark developed by the team at Deepmin
   | Interpretable and provable | Once trained can be applied to different tasks|
   | Inputs need to conform to the algorithm | Massive data requirements | 
   | New task, new algorithm | Black boxes|
+  
+   Developting networks that can combine the strengths of algorithms and traditional neural networks while mitigating their weaknesses would be a powerful development.
+   
+ ### Recent Attempts at Training Neural Networks Algorithms
