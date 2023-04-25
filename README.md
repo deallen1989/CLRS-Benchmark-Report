@@ -30,3 +30,14 @@ A review and introduction to the CLRS Benchmark developed by the team at Deepmin
 <img src="https://user-images.githubusercontent.com/52665911/234370713-1cac148d-6561-4dbb-8798-613716a21dcc.jpg" width = "20%" height = "10%">
 
  You can view the entire public repository on Deepmind's github [here](https://github.com/deepmind/clrs)
+ 
+ ### Neural Networks vs Algorithms
+ 
+  Neural Networks and Algorithms are on opposite ends of the spectrum of tools to solve problems.  A simple way to break down their attributes is as follows:
+  
+  | Algorithms | Neural Networks |
+  | ---        | ---             |
+  | Can accept arbitrary-sized inputs | Extract important features of data|
+  | Interpretable and provable | Once trained can be applied to different tasks|
+  | Inputs need to conform to the algorithm | Massive data requirements | 
+  | New task, new algorithm | Black boxes|
