@@ -27,6 +27,6 @@ A review and introduction to the CLRS Benchmark developed by the team at Deepmin
  
  The CLRS Benchmark takes its name from the authors of the seminal Introduction to Algorithms textbook by Cormen, Leiserston, Rivest, and Stein.  This textbook is ubiquitous among graduate level computer science programs.
  
- 
 <img src="https://user-images.githubusercontent.com/52665911/234370713-1cac148d-6561-4dbb-8798-613716a21dcc.jpg" width = "20%" height = "10%">
 
+ You can view the entire public repository on Deepmind's github [here](https://github.com/deepmind/clrs)
