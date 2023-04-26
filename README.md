@@ -187,11 +187,11 @@ Encoding takes the raw values ($x_i$ for node $i$ , $e_{ij}$ for an edge between
 
 Once the encoded values are calculated, the network "passes messages" $m_{ij}$ along each edge between nodes.  A message function $f_m$ builds the message, and an aggregation function $\oplus$ compiles all the messages sent to a single node to create the aggregate message for node $i$ , $m_i$ :
 
-* $m_{ij} = f_m(h_i,h_j,h_{ij},h_g)
-* $m_i = \underset{(i,j) in E}{\oplus} m_{ji}
+* $m_{ij} = f_m(h_i,h_j,h_{ij},h_g)$
+* $m_i = \underset{(i,j) in E}{\oplus} m_{ji}$
 
 This processing is better understood visually:
-<img width="809" alt="cs224" src="https://user-images.githubusercontent.com/52665911/234652617-6429a7d3-2deb-4a78-8ca9-7b2659fc3d6e.png">
+<img width="400" alt="cs224" src="https://user-images.githubusercontent.com/52665911/234652617-6429a7d3-2deb-4a78-8ca9-7b2659fc3d6e.png">
 
 #### 3. Decode
 
