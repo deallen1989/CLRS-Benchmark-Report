@@ -252,6 +252,21 @@ $$ \oplus = \frac{e^{a(h_i,h_i)}}{\sum e^{a(h_i,h_j)}} $$
  * Finally, testing was done on 32 examples of 64 nodes - this increase in size drastically decreased performance
  * Networks were trained with the Adam optimizer with $\eta = .001$ for $10^4$ steps
 
+The results on the validation date (16 nodes) is below, and shows a reasonable ladder of performance difference with Message Passing Neural Networks and Graph Attention Networks performing well in most cases:
+
+<img width="1176" alt="results" src="https://user-images.githubusercontent.com/52665911/234695296-a84e18e6-08f0-40a4-b07d-ea8ef01f5b62.png">
+
+Note that the y-axis is the $F_1$ score, which is defined as:
+
+$$ \frac{2 tp}{2 tp + fp + fn} $$
+
+Where $tp$ is true positives and $fp, fn$ are false positives and false negatives, respectively. 
+
+However, I was not able to fully understand how this was implemented on this benchmark, and I belive it would require some digging into the GitHub repository to fully understand.
+
+In any case, it would appear that some models were trained well, and good performance was attained.  However as alluded to, on the test data with 64 nodes, performance dropped significantly:
+
+<img width="988" alt="test" src="https://user-images.githubusercontent.com/52665911/234696095-22367357-c132-4ad3-b7d6-244acca232ce.png">
 
 
 
