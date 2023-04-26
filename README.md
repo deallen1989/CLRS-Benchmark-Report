@@ -222,11 +222,29 @@ The baseline neural networks for the benchmark were the following:
 #### Graph Attention Networks
 
 * An attention function $a(h_i,h_j)$ can be defined by the user and intuitively is the "attention" that node $i$ pays to node $j$
-* For the Graph Attention Network in the benchmark, $\oplus$ is self-attention:
+* For the Graph Attention Network in the benchmark, $\oplus$ is the softmax of self-attention:
 
 $$ \oplus = \frac{e^{a(h_i,h_i)}}{\sum e^{a(h_i,h_j)}} $$
 
+#### Pointer Graph Networks
+
+* $\oplus = \max$ 
+* However here, the graph dynamically updates the structure, creating new edges or removing them based on the decoded values
+
+#### Deep Sets
+
+* Each node is modeled as being only connected to itself
+* Choice of $\oplus$ then is irrelevent
+* Popular for summary statistics tasks
+
+#### Memory Networks (MemNets)
+
+* Treats nodes as "queries" and edges as "memories"
+* Performed poorly on these tasks
+
 ### Results
+
+
 
 ## Application and Future Work
 
