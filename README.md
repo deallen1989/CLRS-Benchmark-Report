@@ -177,7 +177,7 @@ As such, the team was left with 30 algorithms:
 
 #### 1. Encode
 
-Encoding takes the raw values ($x_i$ for node $i$ , $e_{ij}$ for an edge between nodes $i$ and $j$ , and $g$ for factors of the overall graph), and encodes them with functions $f_n$ , $f_{e}$ , or $f_g$ , to create encoded values $h$ as follows:
+Encoding takes the raw values ($x_i$ for node $i$ , $e_{ij}$ for an edge between nodes $i$ and $j$ , and $g$ for a feature of the overall graph), and encodes them with node, edge, and graph functions $f_n$ , $f_{e}$ , or $f_g$ , to create encoded values $h$ as follows:
 
 * $h_i = f_n(x_i)$
 * $h_{ij} = f_e(e_{ij})$
@@ -185,7 +185,17 @@ Encoding takes the raw values ($x_i$ for node $i$ , $e_{ij}$ for an edge between
  
 #### 2. Process
 
-Once the encoded values are calculated, the network "passes messages" along each edge between nodes
+Once the encoded values are calculated, the network "passes messages" $m_{ij}$ along each edge between nodes.  A message function $f_m$ builds the message, and an aggregation function $\oplus$ compiles all the messages sent to a single node to create the aggregate message for node $i$ , $m_i$ :
+
+* $m_{ij} = f_m(h_i,h_j,h_{ij},h_g)
+* $m_i = \underset{(i,j) in E}{\oplus} m_{ji}
+
+This processing is better understood visually:
+<img width="809" alt="cs224" src="https://user-images.githubusercontent.com/52665911/234652617-6429a7d3-2deb-4a78-8ca9-7b2659fc3d6e.png">
+
+#### 3. Decode
+
+
 
 ### Baseline Model Overview
 
