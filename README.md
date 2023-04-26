@@ -64,3 +64,64 @@ Algorithms are well understood but require abstract inputs and create abstract o
 
 If neural networks can learn to apply algorithmic reasoning to real data, this "art" can be augmented by machine learning.  Neural networks could discover new applications of existing algorithms, or, more excitingly, invent new algorithms that can themselves be proven and interpreted.
 
+### Motivation - Why a Benchmark?
+
+Benchmarks have been useful in spurring on progress in many areas.  ImageNet created a lot of momentum in the development of convolutional neural networks.  The Wikipedia Treebank was extremely helpful in the development of using recurrent neural networks for natural language processing.
+
+Benchmarks provide two things:
+* A common set of problems and data to work with
+* Performance metrics that can be understood across communities
+
+By making algorithmic reasoning a benchmark for neural networks, a community can grow around this problem and develop further understanding about artificial general intelligence.
+
+### Which Algorithms to Benchmark Against
+
+The Introduction to Algorithms textbook has 94 algorithms, but not all of them are good candidates for a benchmark.  Velickovic and the team developing the benchmark decided on the following criteria on which algorithms _not_ to use:
+
+* No NP-hard problems - the ground truth will be too hard to provide (to be discussed later)
+* No tasks requiring a numerical output - floating point differences are not good indicators of reasoning performance
+* No tasks on data structures - they do not in and of themselves test algorithmic reasoning
+* No tasks requiring dynamic memory allocation - again difficult to provide ground truth
+
+As such, the team was left with 30 algorithms:
+
+- Sorting
+  - Insertion sort
+  - Bubble sort
+  - Heapsort (Williams, 1964)
+  - Quicksort (Hoare, 1962)
+- Searching
+  - Minimum
+  - Binary search
+  - Quickselect (Hoare, 1961)
+- Divide and conquer
+  - Maximum subarray (Kadane's variant) (Bentley, 1984)
+- Greedy
+  - Activity selection (Gavril, 1972)
+  - Task scheduling (Lawler, 1985)
+- Dynamic programming
+  - Matrix chain multiplication
+  - Longest common subsequence
+  - Optimal binary search tree (Aho et al., 1974)
+- Graphs
+  - Depth-first search (Moore, 1959)
+  - Breadth-first search (Moore, 1959)
+  - Topological sorting (Knuth, 1973)
+  - Articulation points
+  - Bridges
+  - Kosaraju's strongly connected components algorithm (Aho et al., 1974)
+  - Kruskal's minimum spanning tree algorithm (Kruskal, 1956)
+  - Prim's minimum spanning tree algorithm (Prim, 1957)
+  - Bellman-Ford algorithm for single-source shortest paths (Bellman, 1958)
+  - Dijkstra's algorithm for single-source shortest paths (Dijkstra et al., 1959)
+  - Directed acyclic graph single-source shortest paths
+  - Floyd-Warshall algorithm for all-pairs shortest-paths (Floyd, 1962)
+- Strings
+  - Naïve string matching
+  - Knuth-Morris-Pratt (KMP) string matcher (Knuth et al., 1977)
+- Geometry
+  - Segment intersection
+  - Graham scan convex hull algorithm (Graham, 1972)
+  - Jarvis' march convex hull algorithm (Jarvis, 1973)
+
+
