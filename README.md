@@ -23,7 +23,7 @@ A review and introduction to the CLRS Benchmark developed by the team at Deepmin
 
 ### What is the CLRS Benchmark?
 
- The CLRS Benchmark is an attempt at measuring the progress made towards teaching neural networks how to perform algorithmic reasoning tasks, such as sorting arrays or finding the shortest path between two nodes on a graph.
+ [The CLRS Benchmark](https://arxiv.org/abs/2205.15659) is an attempt at measuring the progress made towards teaching neural networks how to perform algorithmic reasoning tasks, such as sorting arrays or finding the shortest path between two nodes on a graph.
  
  The paper that introduces this benchmark was presented at the International Conference of Machine Learning (ICML) in 2022.  The main contributor is Petar Velickovic, a researcher at Deepmind.  You can find out more about Petar [here](https://petar-v.com/)
  
@@ -243,6 +243,15 @@ $$ \oplus = \frac{e^{a(h_i,h_i)}}{\sum e^{a(h_i,h_j)}} $$
 * Performed poorly on these tasks
 
 ### Results
+
+ Before diving into the results on how these benchmark models performed, here are the details about training, validation, and test data creation:
+ 
+ * Random graphs were generated for each algorithm (for situations like Insertion Sort, graphs that met the parameters of what the algorithm can accept were created)
+ * Training was done on 1000 examples with 16 nodes each
+ * Validation was done on 32 examples of 16 nodes
+ * Finally, testing was done on 32 examples of 64 nodes - this increase in size drastically decreased performance
+ * Networks were trained with the Adam optimizer with $\eta = .001$ for $10^4$ steps
+
 
 
 
