@@ -177,8 +177,15 @@ As such, the team was left with 30 algorithms:
 
 #### 1. Encode
 
-Encoding takes the raw values ($x_i$ for node $i$ , $e_{ij}$ for an edge between nodes $i$ and $j$ , and $g$ for factors of the overall graph), and encodes them with functions $f_n$ , $f_{ij}$ , or $f_g$ , to create encoded values $h_i$ , $h_{ij}$ , or $h_g$
+Encoding takes the raw values ($x_i$ for node $i$ , $e_{ij}$ for an edge between nodes $i$ and $j$ , and $g$ for factors of the overall graph), and encodes them with functions $f_n$ , $f_{e}$ , or $f_g$ , to create encoded values $h$ as follows:
+
+* $h_i = f_n(x_i)$
+* $h_{ij} = f_e(e_{ij})$
+* $h_g = f_g(g)$
  
+#### 2. Process
+
+Once the encoded values are calculated, the network "passes messages" along each edge between nodes
 
 ### Baseline Model Overview
 
