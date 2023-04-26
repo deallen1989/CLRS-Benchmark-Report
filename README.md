@@ -136,8 +136,29 @@ As such, the team was left with 30 algorithms:
  
  <img width="149" alt="verthints" src="https://user-images.githubusercontent.com/52665911/234607234-10a96338-c502-40b0-b824-d104c4b824f0.png">
  
+ Above, we see a graphical representation of Insertion sort on the series 52431.  All this representation is doing is iterating along each element (the red pointer), finding the node that should point to it (the blue pointer), and rearranging the edges of the graph so the nodes are sorted up to that element.
 
 ### Trajectories of Algorithm Processes
+
+ Given that neural networks are famously black boxes that make it difficult if not impossible to figure out their inner workings, how will we know if a network is simply memorizing outputs rather than learning the actual reasoning of an algorithm?
+ 
+ To address this, the CLRS Benchmark team devised a system of hints, or states that the algorithm should be in after a certain number of steps, assuming the network is performing the algorithm correctly.
+ 
+ Again for the example of insertion sort, after two iterations of the algorithm we want the network to have the array represented like the figure above.  If instead the network was simply searching for the lowest value node and building a new graph from scratch, that would not be the desired output at all.
+ 
+ Therefore, the benchmark will provide, with probability $P=.5$, a hint to the network as it progresses through the algorithm.  The rationale for noisy hinting is given in [this paper on "Noisy Nodes"](https://arxiv.org/abs/2106.07971).
+ 
+ Below is an example for pseudocode on how the benchmark constructs hints, following the color code of the previous figure:
+ 
+ <img width="240" alt="pseudocode" src="https://user-images.githubusercontent.com/52665911/234617349-b7500fb0-7d48-48f2-89a9-9e0d74ae4ebf.png">
+ 
+### Feature Types and Loss Functions
+
+ Finally, for each feature of a graph, there is a value type and corresponding loss function that the benchmark uses to evaluate performance:
+ 
+ |Type|Description|Loss|
+ |---|---|---|
+ |Scalar| $\mathbb{R}$| Mean Squared Error|
 
 ## Results of Baseline Architectures
 
