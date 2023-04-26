@@ -170,6 +170,14 @@ As such, the team was left with 30 algorithms:
 
  The CLRS Benchmark team used several baseline models to kickstart the search for improved performance, but before getting into the results, it will be helpful to describe the neural networks they used - called Processor Networks.
  
+ The processor networks used at baseline architectures for the benchmark follow a three-step process:
+ 1. Encode
+ 2. Process
+ 3. Decode
+
+#### 1. Encode
+
+Encoding takes the raw values ($x_i$ for node $i$ , $e_{ij}$ for an edge between nodes $i$ and $j$ , and $g$ for factors of the overall graph), and encodes them with functions $f_n$ , $f_{ij}$ , or $f_g$ , to create encoded values $h_i$ , $h_{ij}$ , or $h_g$
  
 
 ### Baseline Model Overview
