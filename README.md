@@ -124,4 +124,19 @@ As such, the team was left with 30 algorithms:
   - Graham scan convex hull algorithm (Graham, 1972)
   - Jarvis' march convex hull algorithm (Jarvis, 1973)
 
+## Implementation of the Benchmark
+
+### Representation of Problems
+
+### Trajectories of Algorithm Processes
+
+## Results of Baseline Architectures
+
+### Processor Network Description
+
+### Baseline Model Overview
+
+### Results
+
+## Application and Future Work
 
