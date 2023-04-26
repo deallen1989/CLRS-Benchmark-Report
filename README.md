@@ -288,6 +288,6 @@ I will sum up the applications of this benchmark with a diagram from another of 
 
 <img width="602" alt="algoreason" src="https://user-images.githubusercontent.com/52665911/234701177-34413cf2-5b42-48f5-9656-cde7df3d8e7d.png">
 
-Right now, the "art" mentioned in the RAND paper earlier is going from $x$ to $\Tilde{x}$ to $A(\Tilde{x})$ to $y$.  With a neural network that understands how to perform an algorithm, we can go directly from $x$ to $y$, or figure out different domains to apply existing algorithms, or finally, develop completely new algorithms themselves.
+Right now, the "art" mentioned in the RAND paper earlier is going from $x$ to $\tilde{x}$ to $A(\tilde{x})$ to $y$.  With a neural network that understands how to perform an algorithm, we can go directly from $x$ to $y$, or figure out different domains to apply existing algorithms, or finally, develop completely new algorithms themselves.
 
 This is an exciting area of research that I hope to stay connected to and perhaps contribute to as well.  I encourage you to read the CLRS Benchmark paper and more of Petar Velickovic's fascinating work.
