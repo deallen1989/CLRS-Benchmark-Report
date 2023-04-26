@@ -221,7 +221,7 @@ The baseline neural networks for the benchmark were the following:
 
 #### Graph Attention Networks
 
-* An attention function $a(h_i,h_j) can be defined by the user and intuitively is the "attention" that node $i$ pays to node $j$
+* An attention function $a(h_i,h_j)$ can be defined by the user and intuitively is the "attention" that node $i$ pays to node $j$
 * For the Graph Attention Network in the benchmark, $\oplus$ is self-attention:
 
 \begin{equation*}
