@@ -185,16 +185,23 @@ Encoding takes the raw values ($x_i$ for node $i$ , $e_{ij}$ for an edge between
  
 #### 2. Process
 
-Once the encoded values are calculated, the network "passes messages" $m_{ij}$ along each edge between nodes.  A message function $f_m$ builds the message, and an aggregation function $\oplus$ compiles all the messages sent to a single node to create the aggregate message for node $i$ , $m_i$ :
+Once the encoded values are calculated, the network "passes messages" $m_{ij}$ along each edge between nodes.  A message function $f_m$ builds the message, and an aggregation function $\oplus$ compiles all the messages sent to a single node to create the aggregate message for node $i$ , $m_i$.  Finally, a new encoded value $h_i'$ is calculated for each node based on the old encoded value $h_i$ and the aggregate message $m_i$ with a readout function $f_r$ :
 
 * $m_{ij} = f_m(h_i,h_j,h_{ij},h_g)$
-* $m_i = \underset{(i,j) in E}{\oplus} m_{ji}$
+* $m_i = \underset{(i,j) \in E}{\oplus} m_{ji}$
+* $h_i' = f_r(h_i,m_i)$
+
+The aggregation function $\oplus$ changes but can be anything from a summation, a maximum, or a self-attention softmax.  Descriptions for each baseline model will be given later where applicable.
 
 This processing is better understood visually:
+
 <img width="400" alt="cs224" src="https://user-images.githubusercontent.com/52665911/234652617-6429a7d3-2deb-4a78-8ca9-7b2659fc3d6e.png">
 
 #### 3. Decode
 
+Finally, after a certain number of iterations, a decoding process takes place where we get new "raw values" $y_i$ and $y_{ij}$ with decode functions $g_n$ and $g_e$ :
+
+* $y_i = g_n(h_i
 
 
 ### Baseline Model Overview
