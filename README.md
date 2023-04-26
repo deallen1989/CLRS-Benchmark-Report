@@ -199,9 +199,10 @@ This processing is better understood visually:
 
 #### 3. Decode
 
-Finally, after a certain number of iterations, a decoding process takes place where we get new "raw values" $y_i$ and $y_{ij}$ with decode functions $g_n$ and $g_e$ :
+Finally, after a certain number of iterations, a decoding process takes place where we get new "raw values" $y_i$ and $y_{ij}$ with decode functions $f^{-1}_n$ and $f^{-1}_e$ :
 
-* $y_i = g_n(h_i
+* $y_i = f^{-1}_n(h_i')$
+* $y_{ij} = f^{-1}_e(h_i',h_j')$
 
 
 ### Baseline Model Overview
