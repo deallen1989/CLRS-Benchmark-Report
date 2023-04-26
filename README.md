@@ -204,12 +204,29 @@ Finally, after a certain number of iterations, a decoding process takes place wh
 * $y_i = f^{-1}_n(h_i')$
 * $y_{ij} = f^{-1}_e(h_i',h_j')$
 
+Back to our Insertion Sort example, we wouldn't want to change the values of a node, but we would want to rearrange edges so the arrows point in the right order.
+
 **Each Encode-Process_Decode procedure is a single step of the algorithm.**  All of the functions $f$ above have parameters that can be taught based on the loss functions comparing decoded values to true values, either at the hints given randomly or the final output.
 
 
 ### Baseline Model Overview
 
+The baseline neural networks for the benchmark were the following:
 
+#### Message Passing Neural Networks 
+
+* Traditionally, $\oplus = \sum$
+* However for the benchmark, the team used $\oplus = \max$
+* $f_m$ and $f_r$ are typically multi-layer perceptrons
+
+#### Graph Attention Networks
+
+* An attention function $a(h_i,h_j) can be defined by the user and intuitively is the "attention" that node $i$ pays to node $j$
+* For the Graph Attention Network in the benchmark, $\oplus$ is self-attention:
+
+\begin{equation*}
+ \oplus = \frac{e^{a(h_i,h_i)}}{\sum e^{a(h_i,h_j)}}
+\end{equation*}
 
 ### Results
 
