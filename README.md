@@ -58,7 +58,7 @@ In the above example, an $n$ dimensional array is input into three input nodes (
 
 ### Motivation - Why This Problem?
 
-Algorithms are well understood but require abstract inputs and create abstract outputs, both of which need interpretation in order to be applicable.  In the RAND report published in 1955 on evaluating railway network capacity summed up the problem nicely:
+Algorithms are well understood but require abstract inputs and create abstract outputs, both of which need interpretation in order to be applicable.  In a [RAND report](https://apps.dtic.mil/sti/citations/AD0093458) published in 1955 on evaluating railway network capacity, the problem is summed up nicely:
 
 > The evaluation of both railway system and individual track capacities is, to a considerable extent, an art.  The authors know of no tested mathematical model or formula that includes all of the variations and imponderables that must be weighed.  Even when the individual has been closely associated with the particular territory he is evaluating, the final answer, however accurate, is largely one of judgement and experience.
 
