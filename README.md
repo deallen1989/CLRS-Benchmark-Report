@@ -44,7 +44,7 @@ A review and introduction to the CLRS Benchmark developed by the team at Deepmin
   | Inputs need to conform to the algorithm | Massive data requirements | 
   | New task, new algorithm | Black boxes|
   
-   Developting networks that can combine the strengths of algorithms and traditional neural networks while mitigating their weaknesses would be a powerful development.
+   Developing networks that can combine the strengths of algorithms and traditional neural networks while mitigating their weaknesses would be a powerful development.
    
  ### Recent Attempts at Training Neural Networks Algorithms
  
@@ -60,7 +60,7 @@ In the above example, an $n$ dimensional array is input into three input nodes (
 
 Algorithms are well understood but require abstract inputs and create abstract outputs, both of which need interpretation in order to be applicable.  In a [RAND report](https://apps.dtic.mil/sti/citations/AD0093458) published in 1955 on evaluating railway network capacity, the problem is summed up nicely:
 
-> The evaluation of both railway system and individual track capacities is, to a considerable extent, an art.  The authors know of no tested mathematical model or formula that includes all of the variations and imponderables that must be weighed.  Even when the individual has been closely associated with the particular territory he is evaluating, the final answer, however accurate, is largely one of judgement and experience.
+> The evaluation of both railway system and individual track capacities is, to a considerable extent, an art.  The authors know of no tested mathematical model or formula that includes all of the variations and imponderables that must be weighed.  Even when the individual has been closely associated with the particular territory he is evaluating, the final answer, however accurate, is largely one of judgment and experience.
 
 If neural networks can learn to apply algorithmic reasoning to real data, this "art" can be augmented by machine learning.  Neural networks could discover new applications of existing algorithms, or, more excitingly, invent new algorithms that can themselves be proven and interpreted.
 
@@ -128,7 +128,7 @@ As such, the team was left with 30 algorithms:
 
 ### Representation of Problems
 
- The restrictions placed on which algorithms are included in the benchmark, while understandable, present a problem - how do we represent problems that might be traditonally thought of as having numerical outputs?
+ The restrictions placed on which algorithms are included in the benchmark, while understandable, present a problem - how do we represent problems that might be traditionally thought of as having numerical outputs?
  
  The paper uses the example of Insertion Sort to explain how every problem is represented on graphs.  With insertion sort, each element is considered in turn, and inserted into the right-most position where it is greater than every element to the left.  Thus we might think that the output of Insertion Sort is a series of numbers.  
  
@@ -159,7 +159,7 @@ As such, the team was left with 30 algorithms:
  |Type|Description|Loss|
  |---|---|---|
  |Scalar| $\mathbb{R}$| Mean Squared Error|
- |Cateorical | $1,$ . . . $,K$ | Cross-Entropy|
+ |Categorical | $1,$ . . . $,K$ | Cross-Entropy|
  |Mask | { $0,1$ } | Binary Cross-Entropy|
  |Mask_One| "One Hot" | Categorical Cross-Entropy|
  |Pointer|Similarity Between Nodes | Categorical Cross-Entropy|
@@ -234,7 +234,7 @@ $$ \oplus = \frac{e^{a(h_i,h_i)}}{\sum e^{a(h_i,h_j)}} $$
 #### Deep Sets
 
 * Each node is modeled as being only connected to itself
-* Choice of $\oplus$ then is irrelevent
+* Choice of $\oplus$ then is irrelevant
 * Popular for summary statistics tasks
 
 #### Memory Networks (MemNets)
@@ -262,7 +262,7 @@ $$ \frac{2 tp}{2 tp + fp + fn} $$
 
 Where $tp$ is true positives and $fp, fn$ are false positives and false negatives, respectively. 
 
-However, I was not able to fully understand how this was implemented on this benchmark, and I belive it would require some digging into the GitHub repository to fully understand.
+However, I was not able to fully understand how this was implemented on this benchmark, and I believe it would require some digging into the GitHub repository to fully understand.
 
 In any case, it would appear that some models were trained well, and good performance was attained.  However as alluded to, on the test data with 64 nodes, performance dropped significantly:
 
