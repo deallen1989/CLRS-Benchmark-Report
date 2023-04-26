@@ -168,6 +168,10 @@ As such, the team was left with 30 algorithms:
 
 ### Processor Network Description
 
+ The CLRS Benchmark team used several baseline models to kickstart the search for improved performance, but before getting into the results, it will be helpful to describe the neural networks they used - called Processor Networks.
+ 
+ 
+
 ### Baseline Model Overview
 
 ### Results
