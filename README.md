@@ -159,7 +159,7 @@ As such, the team was left with 30 algorithms:
  |Type|Description|Loss|
  |---|---|---|
  |Scalar| $\mathbb{R}$| Mean Squared Error|
- |Cateorical | $1,$ . . . , $K$ | Cross-Entropy|
+ |Cateorical | $1,$ . . . $,K$ | Cross-Entropy|
  |Mask | { $0,1$ } | Binary Cross-Entropy|
  |Mask_One| "One Hot" | Categorical Cross-Entropy|
  |Pointer|Similarity Between Nodes | Categorical Cross-Entropy|
