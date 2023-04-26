@@ -53,3 +53,14 @@ A review and introduction to the CLRS Benchmark developed by the team at Deepmin
 <img width="564" alt="GPU" src="https://user-images.githubusercontent.com/52665911/234432590-d67c06e2-efd8-4ff6-9c19-9ddee097b02e.png">
 
 In the above example, an $n$ dimensional array is input into three input nodes (each column is an input node), and it passes through one more layer with three nodes - this is supposed to be a single step of the algorithm being learned ($s_0, s_1$,...)
+
+## Overview of the Benchmark
+
+### Motivation - Why This Problem?
+
+Algorithms are well understood but require abstract inputs and create abstract outputs, both of which need interpretation in order to be applicable.  In the RAND report published in 1955 on evaluating railway network capacity summed up the problem nicely:
+
+> The evaluation of both railway system and individual track capacities is, to a considerable extent, an art.  The authors know of no tested mathematical model or formula that includes all of the variations and imponderables that must be weighed.  Even when the individual has been closely associated with the particular territory he is evaluating, the final answer, however accurate, is largely one of judgement and experience.
+
+If neural networks can learn to apply algorithmic reasoning to real data, this "art" can be augmented by machine learning.  Neural networks could discover new applications of existing algorithms, or, more excitingly, invent new algorithms that can themselves be proven and interpreted.
+
