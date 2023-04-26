@@ -128,6 +128,15 @@ As such, the team was left with 30 algorithms:
 
 ### Representation of Problems
 
+ The restrictions placed on which algorithms are included in the benchmark, while understandable, present a problem - how do we represent problems that might be traditonally thought of as having numerical outputs?
+ 
+ The paper uses the example of Insertion Sort to explain how every problem is represented on graphs.  With insertion sort, each element is considered in turn, and inserted into the right-most position where it is greater than every element to the left.  Thus we might think that the output of Insertion Sort is a series of numbers.  
+ 
+ However there is a way to represent this problem on a directed graph - by having each node assigned to a value of the array to sort, and an edge from one node to the node directly to the left of it.
+ 
+ <img width="149" alt="verthints" src="https://user-images.githubusercontent.com/52665911/234607234-10a96338-c502-40b0-b824-d104c4b824f0.png">
+ 
+
 ### Trajectories of Algorithm Processes
 
 ## Results of Baseline Architectures
