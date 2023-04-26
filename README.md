@@ -268,7 +268,26 @@ In any case, it would appear that some models were trained well, and good perfor
 
 <img width="988" alt="test" src="https://user-images.githubusercontent.com/52665911/234696095-22367357-c132-4ad3-b7d6-244acca232ce.png">
 
+While these are aggregated performance measures, the MPNN and GAT networks at least did not perform nearly as well on the test examples, and on certain tasks like string algorithms, performance across all processing networks was miniscule.
 
+This shows that generalizing to larger and larger tasks is very difficult for neural networks to learn, and is an open problem of research, more of which we will discuss next.
 
 ## Application and Future Work
 
+### Open Problems and Benchmark Recommendations
+
+The continued work related to the CLRS benchmark is clear - improve performance on generalization.  This will probably involve getting a true understanding of what it means to reason and understand algorithms.
+
+This could involve trying to work out different processor networks, or adjusting the encode-process-decode procedure itself.  Certain adjustments to the processor network could improve performance on a specific kind of algorithm.
+
+Finally with the benchmark itself, I believe a bit of work can be done to make it more accessible to researchers and practitioners, such as supporting different packages and languages.  I am not an expert, so take this recommendation with some salt.
+
+### Application and Conclusion
+
+I will sum up the applications of this benchmark with a diagram from another of Petar Velickovic's papers on [Neural Algorithmic Reasoning](https://arxiv.org/abs/2105.02761).  
+
+<img width="602" alt="algoreason" src="https://user-images.githubusercontent.com/52665911/234701177-34413cf2-5b42-48f5-9656-cde7df3d8e7d.png">
+
+Right now, the "art" mentioned in the RAND paper earlier is going from $x$ to $\Tilde{x}$ to $A(\Tilde{x})$ to $y$.  With a neural network that understands how to perform an algorithm, we can go directly from $x$ to $y$, or figure out different domains to apply existing algorithms, or finally, develop completely new algorithms themselves.
+
+This is an exciting area of research that I hope to stay connected to and perhaps contribute to as well.  I encourage you to read the CLRS Benchmark paper and more of Petar Velickovic's fascinating work.
